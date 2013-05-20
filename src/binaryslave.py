@@ -20,7 +20,7 @@ print('[*] Setting up the game world')
 
 
 # Start the server
-print('[*] Starting the game server')
+print('[*] Starting the game server\n')
 import asyncore
 
 import libs.server.greeter

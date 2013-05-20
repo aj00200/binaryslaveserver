@@ -27,4 +27,12 @@ class Server(asyncore.dispatcher):
         self.listen(5)
 
     def handle_accepted(self, sock, addr):
+        print('[*] Got a new connection')
         handler = Handler(sock)
+
+    def handle_accept(self):
+        # Required for Python 3.1
+        print('[*] Got a new connection')
+        pair = self.accept()
+        if pair is not None:
+            handler = Handler(pair[0])
