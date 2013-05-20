@@ -1,0 +1,8 @@
+[main]
+bind = 127.0.0.1
+greet_port = 31337
+game_port = 1337
+
+server_name = Binary Slave
+server_admin = Aj00200
+
